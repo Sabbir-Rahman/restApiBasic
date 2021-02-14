@@ -7,6 +7,12 @@ class ArticleSerializers(serializers.Serializer):
      email = serializers.EmailField()
      date = serializers.DateTimeField()
 
+    #create 
+    #a = Article(title = 'Another new  one', author = 'Sabbir', email='mdsabbirrahman1998@gmail.com')
+
+    #show all
+    #serializer = ArticleSerializers(Article.objects.all(), many=True) 
+
 
      def create(self, validated_data):
          return Article.objects.create(validated_data)
