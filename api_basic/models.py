@@ -7,3 +7,7 @@ class Article(models.Model):
     author = models.CharField(max_length=100)
     email = models.CharField(max_length=100)
     date = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.title
+
